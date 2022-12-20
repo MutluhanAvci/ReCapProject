@@ -31,10 +31,20 @@ namespace Business.Concrete
             Console.WriteLine("Ekleme işlemi başarılı");
         }
 
+        public void Delete(Car car)
+        {
+            _carDal.Delete(car);
+        }
+
         public List<Car> GetAll()
         {
             return _carDal.GetAll();
         }
+
+        //public void GetCarDetails(int carId)
+        //{
+           
+        //}
 
         public List<Car> GetCarsByBrandId(int brandId)
         {
